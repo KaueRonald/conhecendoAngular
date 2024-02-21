@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 70px;
+    max-width: 90%;
+}
+
+.text>span {
+    color: #2B59C3;
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionOne {
+    max-width: 550px;
+}
+
+@media (max-width: 700px) {
+    .containerTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .text {
+        font-size: 40px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+}

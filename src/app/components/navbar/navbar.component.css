@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background-color: black;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.sectionOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 1); 
+}
+
+.btn.angular {
+    background: linear-gradient(90deg, rgba(245, 9, 76, 1) 3%, rgba(253, 48, 194, 1) 38%, rgba(129, 12, 242, 1) 100%);
+}
+
+.btn.typescript {
+    background: linear-gradient(90deg, rgba(48, 193, 253, 1) 38%, rgba(12, 44, 242, 1) 100%);
+}
+
+.btn.dio {
+    background: linear-gradient(90deg, rgba(38, 153, 213, 1) 0%, rgba(125, 55, 204, 1) 50%, rgba(227, 77, 216, 1) 100%);
+}
+
+.btn.github {
+    background: radial-gradient(circle, rgba(110, 110, 110, 1) 0%, rgba(131, 128, 128, 1) 100%);
+}
+
+.btn.instagram {
+    background: linear-gradient(90deg, rgb(250, 11, 210) 38%, rgb(255, 209, 57) 100%);
+}
+
+.btn.linkedin {
+    background: linear-gradient(90deg, rgba(48, 193, 253, 1) 38%, rgba(12, 44, 242, 1) 100%);
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
